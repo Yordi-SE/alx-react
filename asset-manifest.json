@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/alx-react/static/css/main.ecd91891.css",
+    "main.js": "/alx-react/static/js/main.0e1147c7.js",
+    "static/js/787.545aecf5.chunk.js": "/alx-react/static/js/787.545aecf5.chunk.js",
+    "static/media/logo_hbnb.jpg": "/alx-react/static/media/logo_hbnb.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/alx-react/index.html",
+    "main.ecd91891.css.map": "/alx-react/static/css/main.ecd91891.css.map",
+    "main.0e1147c7.js.map": "/alx-react/static/js/main.0e1147c7.js.map",
+    "787.545aecf5.chunk.js.map": "/alx-react/static/js/787.545aecf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecd91891.css",
+    "static/js/main.0e1147c7.js"
+  ]
+}

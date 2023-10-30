@@ -1,0 +1,13 @@
+table {
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 50px;
+    
+}
+th {
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+th[colspan] {
+    text-align: center;
+}

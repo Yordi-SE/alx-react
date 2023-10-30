@@ -1,0 +1,9 @@
+.App-header {
+    display: flex;
+    color: red;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    border-bottom: 3px solid red;
+  }
+  

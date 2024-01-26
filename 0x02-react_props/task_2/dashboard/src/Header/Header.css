@@ -1,8 +1,14 @@
-.App-header {
+.header {
     display: flex;
-    border-bottom: 3px solid red;
-    color: red;
+    color: #e0344a;
     align-items: center;
-    justify-content: flex-start;
-  }
+    border-bottom: thick solid #e0344a;
+}
   
+.header img {
+    width: 144px;
+}
+  
+.header h1 {
+    margin: 0;
+}

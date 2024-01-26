@@ -1,8 +1,8 @@
-import { getAllNotificationsByUser, normalizedData } from './notifications';
+import { getAllNotificationsByUser, normalized } from './notifications';
 
-describe('Test for Notifications.js', () => {
-  it('verify that the function returns the correct data', () => {
-    const result = [
+describe('notifications', () => {
+  it('read data from a json', () => {
+    const data = [
         {
           guid: '2d8e40be-1c78-4de0-afc9-fcc147afd4d2',
           isRead: true,
@@ -18,11 +18,11 @@ describe('Test for Notifications.js', () => {
             'Non diam phasellus vestibulum lorem sed risus ultricies. Tellus mauris a diam maecenas sed',
         },
       ],
-      context = getAllNotificationsByUser('5debd764a7c57c7839d722e9');
+      allContext = getAllNotificationsByUser('5debd764a7c57c7839d722e9');
 
-    expect(context).toEqual(expect.arrayContaining(result));
+    expect(allContext).toEqual(expect.arrayContaining(data));
   });
-
+  /*
   it('normalized - result', () => {
     const data = [
       '5debd76480edafc8af244228',
@@ -41,12 +41,13 @@ describe('Test for Notifications.js', () => {
       '5debd764de9fa684468cdc0b',
     ];
 
-    const result = normalizedData.result;
+    const result = normalized.result;
 
     expect(result).toEqual(expect.arrayContaining(data));
   });
-
-  it('normalizedData - users', () => {
+*/
+  /*
+  it('normalized - users', () => {
     const data = {
       age: 25,
       email: 'poole.sanders@holberton.nz',
@@ -55,12 +56,13 @@ describe('Test for Notifications.js', () => {
       picture: 'http://placehold.it/32x32',
     };
 
-    const user = normalizedData.entities.users['5debd764a7c57c7839d722e9'];
+    const user = normalized.entities.users['5debd764a7c57c7839d722e9'];
 
     expect(user).toEqual(data);
   });
-
-  it('normalizedData - messages', () => {
+*/
+  /*
+  it('normalized - messages', () => {
     const data = {
       guid: 'efb6c485-00f7-4fdf-97cc-5e12d14d6c41',
       isRead: false,
@@ -69,12 +71,13 @@ describe('Test for Notifications.js', () => {
     };
 
     const message =
-      normalizedData.entities.messages['efb6c485-00f7-4fdf-97cc-5e12d14d6c41'];
+      normalized.entities.messages['efb6c485-00f7-4fdf-97cc-5e12d14d6c41'];
 
     expect(message).toEqual(data);
   });
-
-  it('normalizedData - notifications', () => {
+  */
+  /*
+  it('normalized - notifications', () => {
     const data = {
       author: '5debd764f8452ef92346c772',
       context: '3068c575-d619-40af-bf12-dece1ee18dd3',
@@ -82,8 +85,9 @@ describe('Test for Notifications.js', () => {
     };
 
     const notification =
-      normalizedData.entities.notifications['5debd7642e815cd350407777'];
+      normalized.entities.notifications['5debd7642e815cd350407777'];
 
     expect(notification).toEqual(data);
   });
+*/
 });

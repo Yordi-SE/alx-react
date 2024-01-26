@@ -1,15 +1,17 @@
 import React from 'react';
 import './Login.css';
 
-export function Login() {
-    return (
-        <>
-            <p className='Login'>Login to access the full dashboard</p>
-            <label htmlFor='email'>Email</label>
-            <input id='email' type='text' />
-            <label htmlFor='password'>Password</label>
-            <input id='password' type='password' />
-            <button>Ok</button>
-        </>
-    )
+function Login() {
+  return (
+    <main role='main' className='login'>
+      <p>Login to access the full dashboard</p>
+      <label htmlFor='email'>Email</label>
+      <input type='email' name='email' id='email' />
+      <label htmlFor='password'>Password</label>
+      <input type='password' name='password' id='password' />
+      <button type='button'>OK</button>
+    </main>
+  );
 }
+
+export default Login;

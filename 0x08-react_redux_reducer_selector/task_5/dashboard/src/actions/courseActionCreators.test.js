@@ -1,7 +1,7 @@
 import { selectCourse, unSelectCourse } from './courseActionCreators';
 import { SELECT_COURSE, UNSELECT_COURSE } from './courseActionTypes';
 
-describe('actions', () => {
+describe('action creators', () => {
   it('selectCourse', () => {
     const result = selectCourse(1);
     expect(result).toEqual({ type: SELECT_COURSE, index: 1 });
